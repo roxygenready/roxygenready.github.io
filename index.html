@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Roxygenready.GitHub.io by roxygenready</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Roxygenready.GitHub.io</h1>
+        <h2>Prepare your R function library to be compiled into an R package by Roxygen</h2>
+        <a href="https://github.com/roxygenready" class="button"><small>Follow me on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          
+
+
+
+<p><a href="https://cran.r-project.org/web/packages/roxygen2/index.html"><strong>Roxygen2</strong></a> is an awesome tool to easily create a package from your function library. </p>
+
+<p><a href="https://github.com/vertesy/RoxygenReady"><strong>RoxygenReady</strong></a> helps in creating the function annotations needed to compile a proper package by <strong>Roxygen2</strong>.</p>
+
+<p>The function annotation scaffold created by <strong>RoxygenReady</strong> spares you a lot of time documenting your functions easily and precisely. Your users gonna be grateful! The annotation it creates, can be automatically compiled into a package with a few lines of code. Packages are the standard way of distribution R code, as they integrate with other services, code sharing becomes much easier. (See the installation section for an examples)</p>
+
+<h2>
+<a id="workflow-streamlined-package-creation" class="anchor" href="#workflow-streamlined-package-creation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Workflow: streamlined package creation</h2>
+
+<ol>
+<li>
+<p><em>You start out with your .R file containing your favorite functions.</em></p>
+
+<pre><code>print11more &lt;- function(n=1, m=1) { # a function with real added value
+    print (n+(11*m))
+}
+</code></pre>
+</li>
+</ol>
+
+<ul>
+<li>
+<p><em>Create function annotation scaffold by</em> <strong><em>RoxygenReady</em></strong> <em>from all functions in your script.</em></p>
+
+<pre><code>#' print11more
+#'
+#' # a function with real added value
+#' @param n
+#' @param m
+#' @examples print11more(n=1, m=1)
+#' @export
+
+
+print11more &lt;- function(n=1, m=1) {
+    print (n+(11*m))
+}
+</code></pre>
+</li>
+<li>
+<p>After compiling and installing you package,</p>
+
+<ul>
+<li>your functions have a working help:</li>
+</ul>
+</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/vertesy/RoxygenReady/master/Images/03.b.Final.png" alt=""></p>
+
+<ul>
+<li>You can share your package on <strong>GitHub</strong>, and everyone can super easily install it.</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Install directly from <strong>GitHub</strong> via <strong>devtools</strong> with one R command:</p>
+
+
+
+<pre><code>devtools::install_github(repo = "vertesy/RoxygenReady/RoxygenReady")
+</code></pre>
+
+<p>...then simply load the package:</p>
+
+<pre><code>require("RoxygenReady")
+</code></pre>
+
+<h2>
+<a id="package-content" class="anchor" href="#package-content" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Package content</h2>
+
+<p>A couple of functions to generate inline description from your functions, using their names and arguments as default input. These can be later parsed by Roxygen to an R package's help section.</p>
+
+<h2>
+<a id="how-to-create-an-r-package" class="anchor" href="#how-to-create-an-r-package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to create an R package</h2>
+
+<blockquote>
+<p>check: Workflow_to_Create_an_R_Package.R for details</p>
+</blockquote>
+
+<ol>
+<li>Write or collect your favorite functions into an R script </li>
+<li> Create a new package by <strong>roxygen2</strong>'s <code>create()</code> function, copy your function script.</li>
+<li>
+<strong>Prepare</strong> in-line documentation <strong>with RoxygenReady</strong>
+</li>
+<li>Manual editing of in-line description</li>
+<li>
+<strong>Compile</strong> a package &amp; documentation <strong>by roxygen2</strong>
+</li>
+<li>
+<strong>Install</strong> your package locally</li>
+<li>Test your package</li>
+<li>Upload to <strong>GitHub</strong>
+</li>
+<li>Share it with others</li>
+</ol>
+
+<p><br></p>
+
+<pre><code>  Check: Workflow_to_Create_an_R_Package.R for details
+</code></pre>
+
+<p><em>Also check out a great introduction about writing your first package in R by <a href="http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/">Hillary Parker</a></em></p>
+
+<p><br> <br> <br> <br> <br>
+<a href="https://github.com/vertesy/RoxygenReady/generated_pages/new"><em>edit the website</em></a></p>
+        </section>
+
+        <aside id="sidebar">
+
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
