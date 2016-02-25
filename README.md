@@ -13,12 +13,12 @@ More precisely, **RoxygenReady** creates *Roxygen skeletons*, a certain format f
 
 The annotation skeleton it creates, can be automatically compiled into a package with a few lines of code. Packages are the standard way of distribution R code, as they integrate with other services, code sharing becomes much easier. *See the installation section for an example.*
 
-#### You can pass a whole file to **RoxygenReady**, and it will create *Roxygen skeletons* for all functions defined in the file!
+> You can pass a whole file to **RoxygenReady**, and it will create *Roxygen skeletons* for all functions defined in the file!
 
 <br><br>
 ## Workflow: *a streamlined package creation*
 
-1. ### You start out with your .R file containing your favorite functions.
+### 1. You start out with your .R file containing your favorite functions.
 
  		print11more <- function(n=1, m=1) { # a function with real added value
 			print (n+(11*m))
@@ -27,7 +27,7 @@ The annotation skeleton it creates, can be automatically compiled into a package
 	- RoxygenReady expects a short description in the first line, after the `{` character, which will be parsed into the description field of the function annotation.
 
 
-- ### Construct *Roxygen skeletons* RoxygenReady from all functions in your script.
+### 2. Construct *Roxygen skeletons* RoxygenReady from all functions in your script.
 
 		#' print11more
 		#'
@@ -43,12 +43,12 @@ The annotation skeleton it creates, can be automatically compiled into a package
 		}
 
 
-- ### Compile your package by roxygen.
+### 3. Compile your package by roxygen.
 
 	- See section: **How to create an R package?**
 
 
-- ### Installing your package and share via GitHub!
+### 4. Installing your package and share via GitHub!
 
 
        install.packages(RoxygenReady)
