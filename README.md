@@ -7,13 +7,15 @@ Prepare your R function library to be compiled into an R package by Roxygen-->
 
 [**Roxygen2**](https://cran.r-project.org/web/packages/roxygen2/index.html) is an awesome tool to easily create a package from your function library. 
 
-[**RoxygenReady**](https://github.com/vertesy/RoxygenReady) helps in creating the function annotations needed to compile a proper package by **Roxygen2**.
+[**RoxygenReady**](https://github.com/vertesy/RoxygenReady) helps in creating the function annotations needed to compile a proper package by **Roxygen2**. 
 
 More precisely, **RoxygenReady** creates *Roxygen skeletons*, a certain format for inline function annotation (see below). By so, it spares you a lot of time documenting your functions easily and precisely. 
 
 The annotation skeleton it creates, can be automatically compiled into a package with a few lines of code. Packages are the standard way of distribution R code, as they integrate with other services, code sharing becomes much easier. *See the installation section for an example.*
 
 > You can pass a whole file to **RoxygenReady**, and it will create *Roxygen skeletons* for all functions defined in the file!
+
+**RoxygenReady** is a project maintained by @vertesy.
 
 <br><br>
 ## Workflow: *a streamlined package creation*
@@ -101,4 +103,6 @@ A couple of functions to generate inline description from your functions, using 
 
 
  <br/> <br/> <br/> <br/> <br/>
-[*edit the website*](https://github.com/vertesy/RoxygenReady/generated_pages/new)
+<!--[*edit the website*](https://github.com/vertesy/RoxygenReady/generated_pages/new)-->
+
+[*edit the website*](https://github.com/roxygenready/roxygenready.github.io/generated_pages/new)
