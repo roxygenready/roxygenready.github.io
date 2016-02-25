@@ -11,8 +11,6 @@ The annotation skeleton it creates, can be automatically compiled into a package
 
 ##### You can pass a whole file to **RoxygenReady**, and it will create *Roxygen skeletons* for all functions defined in the file!
 
-<br>
-**RoxygenReady** is a project maintained by @vertesy.
 
 <br><br>
 ## Workflow: *a streamlined package creation*
@@ -50,8 +48,8 @@ The annotation skeleton it creates, can be automatically compiled into a package
 ### 4. Installing your package and share via GitHub!
 
 
-       install.packages(RoxygenReady)
-       require(RoxygenReady)
+       install.packages(YourPackage)
+       require(YourPackage)
 
 Browse for help on your functions `help(print11more)`:
 
@@ -78,6 +76,9 @@ Install directly from **GitHub** via **devtools** with one R command:
 
 A couple of functions to generate inline description from your functions, using their names and arguments as default input. These can be later parsed by Roxygen to an R package's help section.
 
+1. [Check out the list of functions](https://github.com/vertesy/RoxygenReady/wiki/Function-Overview)
+2. [Browse the code of the functions](https://github.com/vertesy/RoxygenReady/blob/master/RoxygenReady/R/RoxygenReady.R)
+
 <br><br>
 ## How to create an R package?
 > check: Workflow_to_Create_an_R_Package.R for details
@@ -91,15 +92,22 @@ A couple of functions to generate inline description from your functions, using 
 - Test your package
 - Share it with others via **GitHub**
 
-
 <br>
 
-      Check: Workflow_to_Create_an_R_Package.R for details
 
-*Also check out a great introduction about writing your first package in R by [Hillary Parker](http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/)*
+## [Examples](https://github.com/vertesy/RoxygenReady/tree/master/Examples)
+
+1. Go through the [example scripts](https://github.com/vertesy/RoxygenReady/tree/master/Examples) to understand how the package works.
+
+- You can also check [Workflow_to_Create_an_R_Package.R](https://github.com/vertesy/RoxygenReady/blob/master/Workflow_to_Create_an_R_Package.R) for more details 
+
+- And maybe check out a great introduction about writing your first package in R by [Hillary Parker](http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/)
+
+<br>
+**RoxygenReady** is a project maintained by @vertesy.
 
 
  <br/> <br/> <br/> <br/> <br/>
-<!--[*edit the website*](https://github.com/vertesy/RoxygenReady/generated_pages/new)-->
+[*edit the website*](https://github.com/vertesy/RoxygenReady/generated_pages/new)
 
-[*edit the website*](https://github.com/roxygenready/roxygenready.github.io/generated_pages/new)
+<!--[*edit the website*](https://github.com/roxygenready/roxygenready.github.io/generated_pages/new)-->
