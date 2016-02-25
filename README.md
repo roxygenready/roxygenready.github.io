@@ -1,7 +1,3 @@
-<!--# RoxygenReady
-Prepare your R function library to be compiled into an R package by Roxygen-->
-<!--      site under construction-->
-
 ## Create Roxygen skeletons for all of your functions before compiling it into an R package.
 
 
@@ -13,8 +9,9 @@ More precisely, **RoxygenReady** creates *Roxygen skeletons*, a certain format f
 
 The annotation skeleton it creates, can be automatically compiled into a package with a few lines of code. Packages are the standard way of distribution R code, as they integrate with other services, code sharing becomes much easier. *See the installation section for an example.*
 
-> You can pass a whole file to **RoxygenReady**, and it will create *Roxygen skeletons* for all functions defined in the file!
+##### You can pass a whole file to **RoxygenReady**, and it will create *Roxygen skeletons* for all functions defined in the file!
 
+<br>
 **RoxygenReady** is a project maintained by @vertesy.
 
 <br><br>
