@@ -119,6 +119,6 @@ A couple of functions to generate inline description from your functions, using 
 
 
  <br/> <br/> <br/> <br/> <br/>
-[*edit the website*](https://github.com/vertesy/RoxygenReady/generated_pages/new)
+<!--[*edit the website*](https://github.com/vertesy/RoxygenReady/generated_pages/new)-->
 
-<!--[*edit the website*](https://github.com/roxygenready/roxygenready.github.io/generated_pages/new)-->
+[*edit the website*](https://github.com/roxygenready/roxygenready.github.io/generated_pages/new)
